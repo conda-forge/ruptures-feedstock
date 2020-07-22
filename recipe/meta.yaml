@@ -1,5 +1,5 @@
 {% set name = "ruptures" %}
-{% set version = "1.0.4" %}
+{% set version = "1.0.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 152f5c1a2d43522233160ddceb3a4225587c159b13067dfe6bba087d71070a75
+  sha256: 23761bc0a028a45481c49557f9a0a74bc1ab615718bef5ac44b9223af213c40b
 
 build:
   number: 0
