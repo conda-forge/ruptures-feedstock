@@ -5,7 +5,7 @@ Home: https://github.com/deepcharles/ruptures
 
 Package license: BSD-2-Clause
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Change point detection for signals, in Python
 
