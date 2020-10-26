@@ -5,11 +5,11 @@ Home: https://github.com/deepcharles/ruptures
 
 Package license: BSD-2-Clause
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/ruptures-feedstock/blob/master/LICENSE.txt)
 
 Summary: Change point detection for signals, in Python
 
-
+Documentation: http://ctruong.perso.math.cnrs.fr/ruptures-docs/build/html/index.html
 
 Current build status
 ====================
