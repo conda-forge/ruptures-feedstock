@@ -19,13 +19,13 @@ requirements:
     - {{ compiler('c') }}
   host:
     - pip
-    - python >=3.4
+    - python
     - numpy
     - Cython
 
   run:
     - numpy
-    - python >=3.4
+    - python
     - scipy
 
 test:
