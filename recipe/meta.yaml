@@ -11,7 +11,7 @@ source:
 
 build:
   number: 3
-  skip: true  # [py2k]
+  skip: True  # [py<36]
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -24,13 +24,13 @@ requirements:
     - {{ compiler('c') }}
   host:
     - pip
-    - python >=3.6
+    - python
     - numpy
-    - cython >=0.28.5
+    - cython
 
   run:
     - numpy
-    - python >=3.6
+    - python
     - scipy
 
 test:
