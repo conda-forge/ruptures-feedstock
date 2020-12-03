@@ -23,7 +23,6 @@ requirements:
   host:
     - pip
     - python
-    - wheel
     - cython
     - numpy
 
