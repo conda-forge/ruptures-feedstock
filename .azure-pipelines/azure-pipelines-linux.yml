@@ -12,8 +12,6 @@ jobs:
         CONFIG: linux_64_python3.6.____cpython
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-comp7
-<<<<<<< HEAD
-=======
       linux_64_python3.7.____cpython:
         CONFIG: linux_64_python3.7.____cpython
         UPLOAD_PACKAGES: 'True'
@@ -22,7 +20,6 @@ jobs:
         CONFIG: linux_64_python3.8.____cpython
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-comp7
->>>>>>> 568a990eeba827e4fc0f6325b167c9d726a632a7
   timeoutInMinutes: 360
 
   steps:
