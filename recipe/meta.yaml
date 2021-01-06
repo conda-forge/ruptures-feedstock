@@ -1,5 +1,5 @@
 {% set name = "ruptures" %}
-{% set version = "1.0.6" %}
+{% set version = "1.1.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,21 +7,24 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: aa3eb52e8cee7f2f30eca8210cdd61983dc5b5e41a649034cc52abda319be60b
+  sha256: fb6eda550d749d63d0ea1582f37d290fffa5fd6dc61513d971ef3429681d5255
 
 build:
   number: 0
   script: {{ PYTHON }} -m pip install . -vv
-  noarch: python
 
 requirements:
+  build:
+      - {{ compiler('c') }}
   host:
     - pip
-    - python >=3.4
+    - python
+    - cython
+    - numpy
 
   run:
     - numpy
-    - python >=3.4
+    - python
     - scipy
 
 test:
