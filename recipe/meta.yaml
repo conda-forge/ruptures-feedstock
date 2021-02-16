@@ -21,7 +21,7 @@ requirements:
     - python
     - cython
     - numpy
-    - setuptools_scm[toml]>=3.4
+    - setuptools_scm[toml] >=3.4
   run:
     - numpy
     - python
