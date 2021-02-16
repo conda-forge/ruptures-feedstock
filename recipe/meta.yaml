@@ -1,5 +1,5 @@
 {% set name = "ruptures" %}
-{% set version = "1.1.2" %}
+{% set version = "1.1.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,21 +7,21 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: fb6eda550d749d63d0ea1582f37d290fffa5fd6dc61513d971ef3429681d5255
+  sha256: e3845f5ccc91fe958a120b6bfbc35092b690f09e76d16df4b550b6362ac67b67
 
 build:
-  number: 2
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   build:
-      - {{ compiler('c') }}
+    - {{ compiler('c') }}
   host:
     - pip
     - python
     - cython
     - numpy
-
+    - setuptools_scm[toml] >=3.4
   run:
     - numpy
     - python
