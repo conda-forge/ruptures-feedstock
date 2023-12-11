@@ -1,5 +1,5 @@
 {% set name = "ruptures" %}
-{% set version = "1.1.8" %}
+{% set version = "1.1.9" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 75e1814851b706218c47a733d3d1c94acdcc690f35c69c08d48f0df9d3672cb6
+  sha256: aa940f3c02235dab94753ff15689f8ebaca10c83da71cb29cbb7f981dfa362dc
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
